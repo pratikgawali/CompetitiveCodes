@@ -25,7 +25,6 @@ def minEdits(str1, str2, m, n, editsCount):
 
 
 str1, str2 = "sunday", "saturday"
-str1, str2 = "geek", "gesek"
 
 m,n = len(str1), len(str2)
 editsCount = [[-1 for _ in range(n)] for _ in range(m)]
