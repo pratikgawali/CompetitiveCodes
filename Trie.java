@@ -158,6 +158,6 @@ public class Trie {
 		
 		System.out.println("Deleting word \"prachi\"");
 		trie.deleteWord("prachi");
-		System.out.println("Does \"prachi\" word exists?: " + trie.hasPrefix("prachi"));
+		System.out.println("Does \"prachi\" word exists?: " + trie.hasWord("prachi"));
 	}
 }
