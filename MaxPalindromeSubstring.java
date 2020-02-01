@@ -81,7 +81,7 @@ public class MaxPalindromeSubstring {
 
 	public static void main(String[] args) {
 
-		String str = "cbbd";// "alkjabccbaksiiskab";
+		String str = "alkjabccbaksiiskab";
 		System.out.println("Maximum Palindrome Substring is: " + maxPalindromeSubstr(str));
 	}
 }
