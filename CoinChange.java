@@ -12,18 +12,18 @@ Solve all possible questions on coin change.
 public class CoinChange {
 
 	// order is important
-	private static int countArrangementOfCoins(int[] coins, int sum) {
+	private static int countArrangementOfCoins(int[] coins, int amount) {
 
-		int[] dp = new int[sum + 1];
+		int[] dp = new int[amount + 1];
 		dp[0] = 1;
 
-		for (int s = 1; s <= sum; s++) {
+		for (int a = 1; a <= amount; a++) {
 			for (int c = 0; c < coins.length; c++) {
-				dp[s] = s - coins[c] < 0 ? dp[s] : dp[s] + dp[s - coins[c]];
+				dp[a] = a - coins[c] < 0 ? dp[a] : dp[a] + dp[a - coins[c]];
 			}
 		}
 
-		return dp[sum];
+		return dp[amount];
 	}
 
 	// order is not important
@@ -44,7 +44,36 @@ public class CoinChange {
 
 		for (int a = 1; a <= amount; a++) {
 			for (int c = 1; c <= coins.length; c++) {
-				dp[a][c] = a - coins[c-1] < 0 ? dp[a][c-1] : dp[a-coins[c-1]][c] + dp[a][c-1];
+				dp[a][c] = a - coins[c - 1] < 0 ? dp[a][c - 1] : dp[a - coins[c - 1]][c] + dp[a][c - 1];
+			}
+		}
+
+		return dp[amount][coins.length];
+	}
+
+	// order is not important
+	private static int minCoinsToPay(int[] coins, int amount) {
+
+		final int INF = Integer.MAX_VALUE;
+
+		int[][] dp = new int[amount + 1][coins.length + 1];
+
+		// initialize dp with infinity since we are finding minimum
+		for (int i = 0; i <= amount; i++) {
+			for (int j = 0; j <= coins.length; j++) {
+				dp[i][j] = INF;
+			}
+		}
+
+		// no coins are needed to pay zero amount
+		for (int c = 0; c <= coins.length; c++) {
+			dp[0][c] = 0;
+		}
+
+		for (int a = 1; a <= amount; a++) {
+			for (int c = 1; c <= coins.length; c++) {
+				int coinsNeeded = a-coins[c-1] < 0 ? dp[a][c-1] : dp[a-coins[c-1]][c] + 1;
+				dp[a][c] = Math.min(coinsNeeded, dp[a][c-1]);
 			}
 		}
 
@@ -54,9 +83,10 @@ public class CoinChange {
 	public static void main(String[] args) {
 
 		int[] coins = { 1, 2, 3 };
-		int sum = 4;
+		int amount = 4;
 
-		System.out.println("Number of arrangement of coins: " + countArrangementOfCoins(coins, sum));
-		System.out.println("Number of ways of paying using the coins: " + countWaysOfPaying(coins, sum));
+		System.out.println("Number of arrangement of coins: " + countArrangementOfCoins(coins, amount));
+		System.out.println("Number of ways of paying using the coins: " + countWaysOfPaying(coins, amount));
+		System.out.println("Minimum number of coins needed: " + minCoinsToPay(coins, amount));
 	}
 }
