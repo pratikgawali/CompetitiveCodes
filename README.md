@@ -5,4 +5,10 @@ A repository containing all my competitive coding solutions.
 
 |  #  |      Title     |   Solution  |   Difficulty   |   Tag                   
 |-----|----------------|-------------|----------------|-----------
-|1|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/AddTwoNumsAsLinkedList.java) |Medium|Linked list|
+|1|[Add two numbers](https://leetcode.com/problems/add-two-numbers/)|[Solution](../master/AddTwoNumsAsLinkedList.java) |Medium|Linked list|
+|2|[Arrange given numbers to form the biggest number](https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/)|[Solution](../master/ArrangeBiggestNum.java) |Medium|Strings, Tricky|
+|3|[Clone a linked list with next and random pointer](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/)|[Solution](../master/CloneLinkedListWithRandomPointers.java) |Easy|Linked List, Tricky|
+|4|[Coin change](https://www.geeksforgeeks.org/coin-change-dp-7/)|[Solution](../master/CoinChange.java) |Medium|Dynamic programming|
+|5|[Dutch national flag](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)|[Solution](../master/DutchNationFlag.java) |Easy|Arrays|
+|6|[Edit distance](https://www.geeksforgeeks.org/edit-distance-dp-5/)|[Solution](../master/EditDistance.py) |Easy|Dynamic Programming|
+|7|[First non repeating character](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)|[Solution](../master/FirstNonRepeatingChar.java) |Easy|Arrays|
