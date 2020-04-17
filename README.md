@@ -13,4 +13,4 @@ A repository containing all my competitive coding solutions.
 |6|[Edit distance](https://www.geeksforgeeks.org/edit-distance-dp-5/)|[Solution](../master/EditDistance.py) |Easy|Dynamic Programming|
 |7|[First non repeating character](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)|[Solution](../master/FirstNonRepeatingChar.java) |Easy|Arrays|
 |8|[String to integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/StringToIntegerATOI.java) |Medium|Edge cases|
-|9|[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/KLargestElement.java) |Medium|Heap|
+|9|[Kth largest element in an array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/KLargestElement.java) |Medium|Heap|
