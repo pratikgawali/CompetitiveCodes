@@ -1,4 +1,3 @@
-import java.util.Comparator;
 import java.util.PriorityQueue;
 /*
 ---------------------------------------------------------------------------
@@ -13,31 +12,26 @@ public class KLargestElement {
 
 	public static void main(String[] args) {
 		
-		Integer[] arr = {7, 10, 4, 3, 20, 15};
-		int k = 4;
+		int[] arr = {7, 10, 4, 3, 20, 15};
+		int k = 2;
 		
-		System.out.println(findKLargest(arr, k));
+		System.out.println(findKthLargest(arr, k));
 	}
 
-	private static Integer findKLargest(Integer[] arr, int k) {
+	private static Integer findKthLargest(int[] arr, int k) {
 		
-		PriorityQueue<Integer> maxHeap = new PriorityQueue<>(k, new Comparator<Integer>() {
-			@Override
-			public int compare(Integer i1, Integer i2) {
-				return i2.compareTo(i1);
-			}
-		});
+		PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-		for (int i=0; i<k; i++) maxHeap.add(arr[i]);
+		for (int i=0; i<k; i++) minHeap.add(arr[i]);
 		
 		for (int i=k; i < arr.length; i++) {
-			Integer root = maxHeap.peek();
-			if (arr[i].compareTo(root) == -1) {
-				maxHeap.poll();
-				maxHeap.add(arr[i]);
+			Integer root = minHeap.peek();
+			if (arr[i] > root) {
+				minHeap.poll();
+				minHeap.add(arr[i]);
 			}
 		}	
 		
-		return maxHeap.peek();
+		return minHeap.peek();
 	}
 }
