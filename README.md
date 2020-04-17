@@ -12,3 +12,4 @@ A repository containing all my competitive coding solutions.
 |5|[Dutch national flag](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)|[Solution](../master/DutchNationFlag.java) |Easy|Arrays|
 |6|[Edit distance](https://www.geeksforgeeks.org/edit-distance-dp-5/)|[Solution](../master/EditDistance.py) |Easy|Dynamic Programming|
 |7|[First non repeating character](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)|[Solution](../master/FirstNonRepeatingChar.java) |Easy|Arrays|
+|8|[String to integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/StringToIntegerATOI.java) |Medium|Edge cases|
