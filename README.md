@@ -14,3 +14,4 @@ A repository containing all my competitive coding solutions.
 |7|[First non repeating character](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)|[Solution](../master/FirstNonRepeatingChar.java) |Easy|Arrays|
 |8|[String to integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)|[Solution](../master/StringToIntegerATOI.java) |Medium|Edge cases|
 |9|[Kth largest element in an array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/KLargestElement.java) |Medium|Heap|
+|10|[Minimum frogs croaking](https://leetcode.com/contest/weekly-contest-185/problems/minimum-number-of-frogs-croaking/)|[Solution](../master/MinFrogsCroaking.java) |Medium|Ongoing states|
