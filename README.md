@@ -16,3 +16,4 @@ A repository containing all my competitive coding solutions.
 |9|[Kth largest element in an array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|[Solution](../master/KLargestElement.java) |Medium|Heap|
 |10|[Minimum frogs croaking](https://leetcode.com/contest/weekly-contest-185/problems/minimum-number-of-frogs-croaking/)|[Solution](../master/MinFrogsCroaking.java) |Medium|Ongoing states|
 |11|[Maximum points from cards](https://leetcode.com/contest/weekly-contest-186/problems/maximum-points-you-can-obtain-from-cards/)|[Solution](../master/MaxPointsFromCards.java) |Medium|Fixed window sliding|
+|12|[As far from land as possible](https://leetcode.com/problems/as-far-from-land-as-possible/)|[Solution](../master/AsFarFromLandAsPossible.java) |Medium|BFS|
